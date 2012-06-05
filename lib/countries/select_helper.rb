@@ -29,7 +29,7 @@ module ActionView
           add_options(
             country_options_for_select(value, priority_countries),
             options, value
-          ), html_options
+          ).html_safe, html_options
         )
       end
     end
