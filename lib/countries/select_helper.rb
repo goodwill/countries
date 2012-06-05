@@ -16,7 +16,7 @@ module ActionView
           country_options += "<option value=\"\" disabled=\"disabled\">-------------</option>\n".html_safe
         end
 
-        return country_options + options_for_select(ISO3166::Country::Names, selected)
+        return (country_options + options_for_select(ISO3166::Country::Names, selected)).html_safe
       end
     end
 
